@@ -40,6 +40,13 @@ jobs:
           python-version: "3.12"
  
       - uses: databricks/setup-cli@main
+      # IMPORTANT: prove authentication BEFORE bundle validation
+      - name: Verify Databricks authentication
+        run: |
+         echo "Databricks host:"
+         echo "$DATABRICKS_HOST"
+         echo "Checking Databricks identity..."
+         databricks current-user me
  
       - name: Install smoke test dependencies
         run: pip install pytest databricks-sdk==0.67.0
