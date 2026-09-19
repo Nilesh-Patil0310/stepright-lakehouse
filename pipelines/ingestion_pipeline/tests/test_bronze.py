@@ -9,8 +9,8 @@ not every unit test needs Spark at all, just because the project is built on it.
 
 import pytest
 
-# from bronze_quality import quarantine_rule
-from bronze_quality import quarantine_rule  # noqa: F401
+from bronze_quality_logic import quarantine_rule
+
 
 def test_quarantine_rule_combines_multiple_rules():
     rules = {
@@ -32,6 +32,6 @@ def test_quarantine_rule_rejects_empty_dict():
 
 
 
-# The error is due to unresolved import in Databricks notebooks. 
-# To fix, ensure bronze_quality.py is in the same directory or workspace and accessible.
-# If using Databricks, add the file to the workspace or use %run to include it.
+
+
+        
