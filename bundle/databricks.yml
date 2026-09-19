@@ -42,10 +42,10 @@ targets:
 
   prod:
     workspace:
-      host: https://dbc-f4aa3bf8-4b54.cloud.databricks.com/
+      host: https://dbc-e93c393a-ce27.cloud.databricks.com/
     variables:
       stepright_catalog: prod
-      stepright_warehouse_id: 87661d7fa3770e14
+      stepright_warehouse_id: 8f1ddb1f29582add
 
 
 
