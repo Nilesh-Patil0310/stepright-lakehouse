@@ -48,13 +48,3 @@ print(f"Created {catalog}.stepright.transformation_event_log_raw")
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select * from dev.stepright.ingestion_event_log_raw
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select * from dev.stepright.transformation_event_log_raw
-
-# COMMAND ----------
-
